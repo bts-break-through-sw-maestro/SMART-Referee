@@ -42,4 +42,4 @@
 - Project Design
 - Front-End
 - Back-End
-- Deep Learnig
+- Deep Learning
