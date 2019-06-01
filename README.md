@@ -1,4 +1,4 @@
-## Software Maestro 10th
+﻿## Software Maestro 10th
 
 ### 프로젝트 명
 **SMART Referee** (**S**imple **M**ighty **A**ccurateness **R**apidly **T**roubless Referee)
@@ -17,6 +17,11 @@
   [ [Github](https://github.com/minuk8932) ] [ [Blog](https://exponential-e.tistory.com/) ]<br/>
   
 - 김성진
+  Dongguk University<br/>
+  Department of Mathematices<br/>
+  Department of Statistics<br/>
+
+  [ [Github](https://github.com/comojin1994)] [ [Facebook](https://www.facebook.com/comojin1994) ]<br/>
 
 - 김민수
 
