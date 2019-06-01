@@ -17,6 +17,7 @@
   [ [Github](https://github.com/minuk8932) ] [ [Blog](https://exponential-e.tistory.com/) ]<br/>
   
 - 김성진
+
   Dongguk University<br/>
   Department of Mathematices<br/>
   Department of Statistics<br/>
