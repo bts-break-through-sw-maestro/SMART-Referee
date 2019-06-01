@@ -38,12 +38,8 @@
 스트라이크 여부 판정을 해주는 (사회인)야구 전용 인공지능 심판입니다.<br/>
 
 
-### 적용 기술 (예정)
-- Python
-- Java (Android)
-- openCV
-- openPose
-- openGL ES
-- Tensorflow
-- Django
-- Cloud
+### 프로젝트 관리
+- Project Design
+- Front-End
+- Back-End
+- Deep Learnig
