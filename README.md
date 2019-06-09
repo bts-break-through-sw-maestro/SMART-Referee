@@ -40,6 +40,8 @@
 
 ### 프로젝트 관리
 - Project Design
+> 2019/06/09 (프로젝트 기획 완료)
+
 - Front-End
 - Back-End
 - Deep Learning
