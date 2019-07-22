@@ -4,7 +4,7 @@ from .models import Profile
 
 class ProfileSerializer(serializers.HyperlinkedModelSerializer):
     profile = serializers.HyperlinkedRelatedField(
-        read_only=True, 
+        read_only=True,
         view_name='UserViewSet',
         )
         

@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
 class Profile(models.Model):
     PITCHER = 'P'
     CATCHER = 'C'
@@ -35,32 +36,24 @@ class Profile(models.Model):
     # team_name : 팀명    # back_number : 등번호  
     # position  : 포지션  # credit      : 코인    
     team_name = models.CharField(max_length=30, blank=True)
-    back_number = models.PositiveIntegerField(blank=False, default=0)
+    back_number = models.IntegerField(blank=True, default=0)
     position = models.CharField(
         max_length=2,
         choices=POSITION_CHOICES,
         default=NONE
     )
-    credit = models.PositiveIntegerField(default=0)
+    credit = models.IntegerField(default=0)
     
     # PITCHER STAT FIELD
-    # era       : 방어율  # speed : 평균 구속  
-    # strikeout : 탈삼진  # win   : 승리
-    # lose      : 패배    # save  : 세이브
-    era = models.FloatField(blank=True)
-    speed = models.FloatField(blank=True)
-    strikeout = models.PositiveIntegerField(blank=True)
-    win = models.PositiveIntegerField(blank=True)
-    lose = models.PositiveIntegerField(blank=True)
-    save = models.PositiveIntegerField(blank=True)
+    inning_pitched = models.FloatField(default=0) # 투구 이닝
+    earned_run = models.IntegerField(default=0) # 자책점
+    win = models.IntegerField(default=0) # 승리
+    lose = models.IntegerField(default=0) # 패배
+    save = models.IntegerField(default=0) # 세이브
+    hold = models.IntegerField(default=0) # 홀드
+    strike_out = models.IntegerField(default=0) # 삼진
+    hits = models.IntegerField(default=0) # 피안타
+    bb = models.IntegerField(default=0) # 볼넷
     
     # HITTER STAT FIELD
-    # avg : 타율    # obp   : 출루율
-    # slg : 장타율  # ops   : OPS
-    # rbi : 타점    # steal : 도루
-    avg = models.FloatField(blank=True, default=0)
-    obp = models.FloatField(blank=True)
-    slg = models.FloatField(blank=True)
-    ops = models.FloatField(blank=True)
-    rbi = models.PositiveIntegerField(blank=True)
-    steal = models.PositiveIntegerField(blank=True)
+    
