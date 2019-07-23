@@ -6,6 +6,8 @@ from users import views
 router = routers.DefaultRouter()
 router.register('users', views.UserViewSet)
 router.register('profile', views.ProfileViewSet)
+router.register('hitter', views.HitterRecordViewSet)
+router.register('pitcher', views.PitcherRecordViewSet)
 router.register('group', views.GroupViewSet)
 router.register('permission', views.PermissionViewSet)
 
