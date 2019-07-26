@@ -1,18 +1,13 @@
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from users import views
+import play.urls, users.urls, teams.urls
 
-router = routers.DefaultRouter()
-router.register('users', views.UserViewSet)
-router.register('profile', views.ProfileViewSet)
-router.register('hitter', views.HitterRecordViewSet)
-router.register('pitcher', views.PitcherRecordViewSet)
-router.register('group', views.GroupViewSet)
-router.register('permission', views.PermissionViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(router.urls)),
+    path('api/', include(users.urls)),
+    path('api/', include(play.urls)),
+    path('api/', include(teams.urls)),
     path('api-auth/', include('rest_framework.urls'), name="rest_framework")
 ]

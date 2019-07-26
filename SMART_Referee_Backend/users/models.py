@@ -48,42 +48,42 @@ class HitterRecord(models.Model):
     # User 모델과 1 : 1 관계
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
-    at_bats = models.IntegerField(default=0)         # 타석
-    hits = models.IntegerField(default=0)            # 안타
-    doubles = models.IntegerField(default=0)         # 2루타
-    triples = models.IntegerField(default=0)         # 3루타
-    home_runs = models.IntegerField(default=0)       # 홈런
-    runs_scored = models.IntegerField(default=0)     # 득점
-    runs_batted_in = models.IntegerField(default=0)  # 타점
-    bases_on_balls = models.IntegerField(default=0)  # 볼넷
-    hits_by_pitches = models.IntegerField(default=0) # 사구
-    strikes_out = models.IntegerField(default=0)     # 삼진
-    steals = models.IntegerField(default=0)          # 도루
-    sacrifice_fly = models.IntegerField(default=0)   # 희생 플라이
+    hitter_at_bats = models.IntegerField(default=0)         # 타석
+    hitter_hits = models.IntegerField(default=0)            # 안타
+    hitter_doubles = models.IntegerField(default=0)         # 2루타
+    hitter_triples = models.IntegerField(default=0)         # 3루타
+    hitter_home_runs = models.IntegerField(default=0)       # 홈런
+    hitter_runs_scored = models.IntegerField(default=0)     # 득점
+    hitter_runs_batted_in = models.IntegerField(default=0)  # 타점
+    hitter_bases_on_balls = models.IntegerField(default=0)  # 볼넷
+    hitter_hits_by_pitches = models.IntegerField(default=0) # 사구
+    hitter_strikes_out = models.IntegerField(default=0)     # 삼진
+    hitter_steals = models.IntegerField(default=0)          # 도루
+    hitter_sacrifice_fly = models.IntegerField(default=0)   # 희생 플라이
     
-    avg = models.FloatField(default=0)              # 타율
-    obp = models.FloatField(default=0)              # 출루율
-    slg = models.FloatField(default=0)              # 장타율
-    ops = models.FloatField(default=0)              # OPS
+    hitter_avg = models.FloatField(default=0)              # 타율
+    hitter_obp = models.FloatField(default=0)              # 출루율
+    hitter_slg = models.FloatField(default=0)              # 장타율
+    hitter_ops = models.FloatField(default=0)              # OPS
 
 
 class PitcherRecord(models.Model):
     # User 모델과 1 : 1 관계
     user = models.OneToOneField(User, on_delete=models.CASCADE)  
     
-    hit_by_pitch = models.IntegerField(default=0)   # 사구
-    wild_pitch = models.IntegerField(default=0)     # 폭투
-    earned_runs = models.IntegerField(default=0)    # 자책점
-    bases_on_balls = models.IntegerField(default=0) # 볼넷
-    strike_outs = models.IntegerField(default=0)    # 삼진
-    holds = models.IntegerField(default=0)          # 홀드
-    saves = models.IntegerField(default=0)          # 세이브
-    wins = models.IntegerField(default=0)           # 승리
-    losses = models.IntegerField(default=0)         # 패배
-    hits = models.IntegerField(default=0)           # 피안타
-    home_runs = models.IntegerField(default=0)      # 피홈런
-    runs = models.IntegerField(default=0)           # 실점
-    games = models.IntegerField(default=0)          # 경기에 나온 수
+    pitcher_hit_by_pitch = models.IntegerField(default=0)   # 사구
+    pitcher_wild_pitch = models.IntegerField(default=0)     # 폭투
+    pitcher_earned_runs = models.IntegerField(default=0)    # 자책점
+    pitcher_bases_on_balls = models.IntegerField(default=0) # 볼넷
+    pitcher_strike_outs = models.IntegerField(default=0)    # 삼진
+    pitcher_holds = models.IntegerField(default=0)          # 홀드
+    pitcher_saves = models.IntegerField(default=0)          # 세이브
+    pitcher_wins = models.IntegerField(default=0)           # 승리
+    pitcher_losses = models.IntegerField(default=0)         # 패배
+    pitcher_hits = models.IntegerField(default=0)           # 피안타
+    pitcher_home_runs = models.IntegerField(default=0)      # 피홈런
+    pitcher_runs = models.IntegerField(default=0)           # 실점
+    pitcher_games = models.IntegerField(default=0)          # 경기에 나온 수
     
-    inning_pitched = models.FloatField(default=0)   # 투구 이닝
-    earned_run_avg = models.FloatField(default=0)   # 방어율
+    pitcher_inning_pitched = models.FloatField(default=0)   # 투구 이닝
+    pitcher_earned_run_avg = models.FloatField(default=0)   # 방어율

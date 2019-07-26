@@ -1,4 +1,4 @@
-from django.contrib.auth.models import User, Group, Permission
+from django.contrib.auth.models import User, Permission
 from rest_framework import viewsets
 from .models import Profile, HitterRecord, PitcherRecord
 import users.serializers
@@ -22,11 +22,6 @@ class HitterRecordViewSet(viewsets.ModelViewSet):
 class PitcherRecordViewSet(viewsets.ModelViewSet):
     queryset = PitcherRecord.objects.all()
     serializer_class = users.serializers.PitcherSerializer
-    
-    
-class GroupViewSet(viewsets.ModelViewSet):
-    queryset = Group.objects.all()
-    serializer_class = users.serializers.GroupSerializer
 
 
 class PermissionViewSet(viewsets.ModelViewSet):

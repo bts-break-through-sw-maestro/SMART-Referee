@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'users.apps.UsersConfig',
     'play.apps.PlayConfig',
+    'teams.apps.TeamsConfig',
 ]
 
 MIDDLEWARE = [

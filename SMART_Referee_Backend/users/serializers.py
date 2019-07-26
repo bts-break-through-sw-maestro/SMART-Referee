@@ -42,12 +42,6 @@ class HitterSerializer(serializers.HyperlinkedModelSerializer):
         fields = '__all__'
 
 
-class GroupSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Group
-        fields = '__all__'
-
-
 class PermissionSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Permission
