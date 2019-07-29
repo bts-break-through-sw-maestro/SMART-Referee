@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'play.apps.PlayConfig',
     'teams.apps.TeamsConfig',
+    'records.apps.RecordsConfig',
 ]
 
 MIDDLEWARE = [
@@ -127,5 +128,5 @@ STATIC_URL = '/static/'
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
-    )
+    ),
 }
